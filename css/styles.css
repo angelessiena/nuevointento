@@ -1,0 +1,151 @@
+.container-fluid{display:inline; margin-top: -70px; margin-bottom: -70px; background-color:#084677; font-size: 20px; gap: 30px; justify-content: space-around;}
+
+.logotipo{width: 100px; padding-bottom: 5px; padding-top: 20px;}
+.nav-link-contacto{margin-left: 50px;}
+
+    *{margin: 10;
+    padding: 10px;
+    width: 100%;}
+
+
+
+h1{
+    color:#013C4C;
+}
+body{font-family: 'Dancing Script', cursive;}
+
+
+ul{outline: 1px; color: blue;
+    list-style:none;
+    padding: 0;
+    margin: 0;
+}
+
+/* TEXTO NAV BAR */
+a{outline: 1px; color: #72eaf5; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-decoration: none;}
+
+li{outline: 1px; color:black;
+width: 100px;}
+
+
+
+ul{list-style-type: none;}
+
+
+/* IMAGEN DE PORTADA */
+
+
+.arriba {margin-top: 40px; margin-bottom: 40px;}
+
+
+    
+    .rem{font-size: 1rem;}
+
+    .rem{margin-bottom: 10px; margin-top: 20px;}
+    .letra-grande{margin-bottom: 10px;}
+    .header{position:sticky;
+    top:0;}
+
+    .coder{font-size: 20px; color: aliceblue; font-family: Verdana, Geneva, Tahoma, sans-serif; margin-top: 40px; margin-bottom: 40px;}
+
+    .inicio{margin-top: 40px; margin-bottom: 20px; font-size: 25px; text-align: center;}
+    .titulo{color: darkcyan; margin-top: 60px; font-style: initial;font-size: 30px; text-align: center; margin-bottom: 20px;}
+    .texto{text-align: center;margin-bottom: 20px; font-size: 20px;}
+    .texto2{text-align: center; margin-top: 20px; margin-bottom: 20px;}
+    .img{margin-left: 320px;}
+
+    
+    /*RECORRIDO CON IMÁGENES*/
+    
+    .recorridoimg{width: 300px; margin-bottom: 20px; background-color: aqua;}
+    .cubelsvideo{width: 300px; height: 400px;background-color: aqua;display:list-item;}
+    .ibiza li{width: 300px; margin-bottom: 20px;}
+    .descripcion{text-align: center;}
+    
+    
+    /*RECOMENDACIONES*/
+
+    .recomendaciones{margin-bottom: 20px; font-size: 40px; text-align: center;}
+    .ibi{margin-bottom: 20px;}
+    .mal{margin-bottom: 20px;}
+    .malaga li{width: 300px; margin-bottom: 20px;}
+
+    
+    /*ESTILOS DE LA GALERÍA*/
+
+    .grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 150px;
+    padding: 30px;
+    grid-gap:30px;
+    }
+/*grid-template-columns:repeat(3, 1fr);*/
+
+
+.grid-item{
+    width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.gallery{
+    position: relative;
+    z-index: -1;
+}
+
+.gallery-title{
+    color:rgb(32, 132, 165);
+    width: 50%;
+    margin: -10px;
+    padding: 10px;
+    z-index: -1;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.carousel-item{object-fit: scale-down; height: 100vh; width: 100%;}
+.slide1{height: 100vh; width: 100%;}
+.slide2{height: 100vh; width: 100%;}
+
+.grid-item:nth-child(1){
+    grid-row-start: span 2;
+}
+
+.grid-item:nth-child(2){
+    grid-row-start: span 3;
+}
+
+
+.grid-item:nth-child(10){
+    grid-row-start: span 3;
+}
+
+/*PARA VISAULIZAR EN TABLET, PUEDO ELEJIR TAMAÑOS DE LAS IMG ETC*/
+
+@media(max-widht:991px) {
+    .gallery-container{
+    grid-template-columns: repeat(4,1fr);
+    }
+    .gallery-item:nth-child(3) {
+        grid-column-start: span 2;
+    }
+}
+
+/*PARA VISAULIZAR EN MOBILE FIRST-CODIGO SIN MEDIA*/
+
+
+.img{width: 100%; border-radius: 15px; box-shadow: 0px 3px 5px; width: 75vh; max-width: 1000px; min-width: 320px; margin-left: 30%;}
+
+.social-icons{
+    min-width: 700px;
+    display:inline-flex;
+    justify-content:left;
+    }
+
+.social-icons__logo{
+    text-decoration: none;
+    width: 50px;
+}
+
